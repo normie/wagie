@@ -1,0 +1,46 @@
+.videoWrapper{
+    position:relative;
+    padding-top:56.25%;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.7);
+}
+.react-player iframe{
+    margin-top: 0;
+    margin-left:0.15rem;
+    margin-right: 0rem;
+    margin-bottom: 3rem;
+    top:5.2%;
+    left:-5.1%;
+    padding:0rem;
+    position: absolute;
+    object-fit: fill;
+    max-width:892px;
+    max-height:720px;
+    min-height: 700px;
+    min-width: 800px;
+    margin-bottom:0.5rem;
+    overflow:hidden;
+}
+@media screen and (max-width:600px)
+{
+    .react-player iframe{
+        position: absolute !important;
+        left: -0.25% !important;
+        bottom: 50% !important;
+        min-width: 20% !important;
+        width: 99% !important;
+    }
+    .videoWrapper {
+        top: -41% !important;
+    }
+}
+
+/*position:absolute;
+    border-radius:0.25em;
+    padding-bottom: 1rem;
+    object-fit: fill;
+    max-width:892px;
+    max-height:700px;
+    min-height: 700px;
+    min-width: 800px;
+    height: 100%;
+    width:100%; */
