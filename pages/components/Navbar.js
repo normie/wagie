@@ -1,12 +1,13 @@
 import React, {useState,useEffect} from 'react';
 //import { Button } from './Button';
-import twitterLogo from '../../public/assets/logo-black.png'
-import telegramLogo from '../../public/assets/Telegram_logo.png'
+import twitterLogo from 'next/image';
+import telegramLogo from 'next/image';
+import discordLogo from 'next/image';
+import openseaLogo from 'next/image';
 import fresco150 from '../../public/assets/fresco150.png'
-import discordLogo from '../../public/assets/discord-mark-black.png'
-import openseaLogo from '../../public/assets/opensea-logo.png'
 import { Typography } from '@mui/material';
 import { Container,Button} from '@mui/material';
+import Image from 'next/image';
 
 
 function HeaderNavbar() {
@@ -53,7 +54,8 @@ function HeaderNavbar() {
                                         color: 'black',
                                     }}>
                                     <div className="nav-icon">
-                                        <img className="img-icon" src={twitterLogo} alt ="twitter"/>
+                                        <Image className="img-icon" src="/assets/twitterlogo.svg" alt ="twitter"
+                                        width={32} height={32}/>
                                     </div>
                                     </Button>
                                 </li>
@@ -63,7 +65,8 @@ function HeaderNavbar() {
                                         color: 'black',
                                     }}>
                                     <div className ="nav-icon">
-                                        <img className="img-icon" src={telegramLogo} alt="telegram"></img>
+                                        <Image className="img-icon" src="/assets/Telegram_logo.png" alt="telegram"
+                                        width={32} height={32}/>
                                     </div>
                                     </Button>
                                 </li>
@@ -73,7 +76,8 @@ function HeaderNavbar() {
                                         color: 'black',
                                     }}>
                                     <div className= "nav-icon">
-                                        <img className= "img-icon" src={discordLogo} alt="discord"></img>
+                                        <Image className= "img-icon" src="/assets/discord-mark-white.png" alt="discord"
+                                        width={32} height={32}/>
                                     </div>
                                     </Button>
                                 </li>
@@ -83,7 +87,8 @@ function HeaderNavbar() {
                                         color: 'black',
                                     }}>
                                     <div className='nav-icon'>
-                                        <img className= "img-icon" src={openseaLogo} alt='MarketPlace'></img>
+                                        <Image className= "img-icon" src="/assets/opensea-logo.png" alt='MarketPlace'
+                                        width={32} height={32}/>
                                     </div>
                                     </Button>
                                 </li>

@@ -18,11 +18,11 @@ export default function Home() {
             
         </HeaderNavbar>
       
-        <SectionOneBg>
+        {/*<SectionOneBg>
           {/*
           <VideoBg>
             <VideoPlayer/>
-          </VideoBg>*/}
+          </VideoBg>
         </SectionOneBg>
         <Mintbar></Mintbar>
         <SectionTwoBg>
@@ -31,7 +31,7 @@ export default function Home() {
           </Sectiontwoslide>
         </SectionTwoBg>
         
-        <Foot></Foot>
+      <Foot></Foot>*/}
     
       </div>
     </>

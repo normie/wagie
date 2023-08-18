@@ -1,7 +1,7 @@
-import './Home.css';
-import './components/Navbar.css';
-import './components/Sectiontwocontainer.css';
-import './components/Videoplayer.css';
+import '../styles/Home.css';
+import '../styles/Navbar.css';
+import '../styles/Sectiontwocontainer.css';
+import '../styles/Videoplayer.css';
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />
