@@ -1,9 +1,10 @@
 import * as React from "react";
 import { Grid, Box, Container, Paper, Slide } from "@mui/material";
 import { keyframes } from "@mui/material";
+import Image from 'next/image';
 
+//random images causing hydration error because images on server and client are not the same
 
-const images = importAll(require.context('../../public/assets/frescoslide', true))
 
 function Sectiontwoslide(props) {
 
@@ -26,12 +27,12 @@ function Sectiontwoslide(props) {
 
     let rows = React.useMemo(() => {
         return [
-            [randomNumber(images), randomNumber(images)],
-            [randomNumber(images), randomNumber(images)],
-            [randomNumber(images), randomNumber(images)],
-            [randomNumber(images), randomNumber(images)],
+            [randomNumber(importImages()), randomNumber(importImages())],
+            [randomNumber(importImages()), randomNumber(importImages())],
+            [randomNumber(importImages()), randomNumber(importImages())],
+            [randomNumber(importImages()), randomNumber(importImages())],
         ]
-    }, [images]);
+    }, [importImages()]);
 
     return (
         <>
@@ -65,10 +66,15 @@ function Sectiontwoslide(props) {
         </>
     )
 }
-
-function importAll(r) {
-    return r.keys().map(r);
+function importImages() {
+    const images = [];
+    for (let x=1; x<8; x++) {
+        images.push([`/assets/frescoslide/${x}.png`])
+    }
+    return images;
 }
+
+
 function randomNumber(array) {
     const randomImage = array[Math.floor(Math.random() * array.length)];
     return randomImage;

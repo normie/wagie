@@ -9,6 +9,7 @@ import Windowmint from './components/Mintwindow';
 import Sectiontwoslide from './components/Sectiontwos';
 import Foot from './components/Footer';
 
+
 export default function Home() {
   return (
     <>
@@ -18,20 +19,23 @@ export default function Home() {
             
         </HeaderNavbar>
       
-        {/*<SectionOneBg>
+        <SectionOneBg>
+        </SectionOneBg>
           {/*
           <VideoBg>
             <VideoPlayer/>
           </VideoBg>
-        </SectionOneBg>
+          */}
+          
         <Mintbar></Mintbar>
+        
         <SectionTwoBg>
           <Windowmint></Windowmint>
           <Sectiontwoslide>
           </Sectiontwoslide>
         </SectionTwoBg>
         
-      <Foot></Foot>*/}
+        <Foot></Foot>
     
       </div>
     </>

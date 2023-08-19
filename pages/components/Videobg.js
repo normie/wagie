@@ -6,6 +6,7 @@ import windowframe1 from "../../public/assets/netscape730.png";
 import VideoPlayer from './Videoplayer';
 import ReactPlayer from 'react-player';
 import best1 from "../../public/assets/best1.png";
+import Image from 'next/image';
 
 function VideoBg() {
     const boxStyle = {
@@ -26,27 +27,28 @@ function VideoBg() {
             },
             display:'flex',
             justifyContent: 'center',
-            marginTop: '2.5rem',
+            paddingLeft: '10rem',
+            marginLeft: 'auto',
             position: 'absolute',
-            backgroundImage: `url(${best1})`,
-            backgroundSize: 'contain',
+            backgroundImage: 'url(/assets/best1.png)',
+            backgroundSize: 'cover',
             minHeight: {
                 xs:'378px',
                 sm:'550px',
-                md:'50vh',
+                md:'90%',
             },
-            maxHeight:'795px',
-            maxWidth:'730px',
+            maxHeight:'900px',
+            maxWidth:'1000px',
             objectFit: 'cover',
             height: {
                 xs:'10% !important',
                 sm:'50%',
-                md: '70%',
+                md: '80%',
             },
             width: {
                 xs:'90%',
-                sm:'100%',
-                md:'80%',
+                sm:'80%',
+                md:'100%',
             },
             border: 'black solid 1px',
             borderRadius: '.2em',
