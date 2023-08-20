@@ -29,6 +29,7 @@ function VideoBg() {
             justifyContent: 'center',
             paddingLeft: '10rem',
             marginLeft: 'auto',
+            top: '30%',
             position: 'absolute',
             backgroundImage: 'url(/assets/best1.png)',
             backgroundSize: 'cover',

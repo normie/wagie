@@ -1,11 +1,7 @@
 @media screen 
 and (max-width:600px)
 {
-    .title-container{
-        font-size:1.5rem !important;
-        margin-left: 1rem !important;
-        margin-right: 0.75rem !important;
-    }
+    
     .navbar-container{
         display:flex !important;
         flex-direction: column !important;
@@ -18,17 +14,26 @@ and (max-width:600px)
     }
 }
 .title-container {
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-style:italic;
+    text-shadow: 0.4vw 0.25vw 0.25vw rgba(251, 12, 12,1), 0px -0.25vw 0.4vw rgba(12, 79, 251,.5),-0.4vw 0px 0.25vw rgba(52, 251, 12, 1);
+    animation: chromaticMove 5000ms ease infinite ,pulse ease 200ms  infinite;
     color:white;
     text-align:center;
     flex: 1 0 auto;
-    margin-right:none;
-    font-size:3rem;
+    margin-right:auto;
+    font-size:10vw;
     font-weight: bold;
     position: relative;
-    max-width: 50%;
+    max-width: 90vw;
     margin-left:auto;
 }
-
+@keyframes chromaticMove { 
+    0%{text-shadow: 0.4vw 0.25vw 0.25vw rgba(251, 12, 12,1), 0px -0.25vw 0.4vw rgba(12, 79, 251,.5),0px 0px -0.25vw rgba(52, 251, 12, 1);}
+    50%{text-shadow: 0.4vw 0.25vw 0.25vw rgba(251, 12, 12,1), 0px -0.25vw 0.25vw rgba(12, 79, 251,.5),-0.4vw 0.25vw 0.4vw rgba(52, 251, 12, 1);}
+    100%{text-shadow: 0.4vw 0.25vw 0.25vw rgba(251, 12, 12,1), 0px -0.25vw 0.25vw rgba(12, 79, 251,.5),0.25vw -0.25vw 0.25vw rgba(52, 251, 12, 1);}
+}
 
 .navbar-container{
     margin-left:12.5%;

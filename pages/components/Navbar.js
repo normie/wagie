@@ -8,6 +8,7 @@ import fresco150 from '../../public/assets/fresco150.png'
 import { Typography } from '@mui/material';
 import { Container,Button} from '@mui/material';
 import Image from 'next/image';
+import "@fontsource/roboto/900.css"
 
 
 function HeaderNavbar() {
@@ -34,14 +35,14 @@ function HeaderNavbar() {
                 position:"relative",
                 padding:"2rem",
                 flexShrink: "2",
-                flexwrap: "wrap",
+                flexWrap: "wrap",
             }}
             >
                 
                     <div className="title-container" >
                         Fresco Corporation
                     </div>
-                    
+                    {/*
                         <div className='navbar-container'>
                             <ul className="nav-menu">
                                 <li>
@@ -94,7 +95,7 @@ function HeaderNavbar() {
                                 </li>
                             </ul>
                         </div>
-                    
+                     */}
             </Container>
         </>
     )
