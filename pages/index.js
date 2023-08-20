@@ -17,11 +17,6 @@ export default function Home() {
     
         <SectionOneBg>
         </SectionOneBg>
-          {/*
-          <VideoBg>
-            <VideoPlayer/>
-          </VideoBg>
-          */}
           
         <Mintbar></Mintbar>
         

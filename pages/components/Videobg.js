@@ -11,54 +11,42 @@ import Image from 'next/image';
 function VideoBg() {
     const boxStyle = {
         '@media (min-width:600px)':{
-            width: '80%'
+            height: '40%'
         }
     }
     return (
         <>
         
             <Box 
-            maxWidth='md'
+            maxWidth='false'
+            maxHeight='false'
             sx={{
-            top: {
-                xs:'35%',
-                sm:'30%',
-                md:'20%',
-            },
-            display:'flex',
-            justifyContent: 'center',
-            paddingLeft: '10rem',
-            marginLeft: 'auto',
-            top: '40%',
-            position: 'absolute',
+            marginTop:'3rem',
+            marginRight:'auto',
+            marginLeft:'auto',
             backgroundImage: 'url(/assets/best1.png)',
-            backgroundSize: 'cover',
-            minHeight: {
-                xs:'378px',
-                sm:'550px',
-                md:'90%',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            minHeight: '600px',
+            height: '65%',
+            '@media (max-width:600px)':{
+                minHeight: 'auto',
+                height: '30%'
             },
-            maxHeight:'900px',
-            maxWidth:'1000px',
-            objectFit: 'cover',
-            height: {
-                xs:'10% !important',
-                sm:'50%',
-                md: '80%',
+            '@media (max-width:1200px)':{
+                height: '45%'
             },
-            width: {
-                xs:'90%',
-                sm:'80%',
-                md:'100%',
-            },
-            border: 'black solid 1px',
+            width: '70vw',
+            border: 'white solid 1px',
             borderRadius: '.2em',
             zIndex: '2',
-            overflow: 'visible',
+            overflow: 'hidden',
+            padding:'1rem',
+            marginBottom:'3rem',
             
             }}
             >
-                <VideoPlayer></VideoPlayer>
+                {/*<VideoPlayer></VideoPlayer>*/}
             </Box>
             
         </>

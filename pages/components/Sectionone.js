@@ -24,6 +24,7 @@ function SectionOneBg() {
             sx={{
             MarginBottom: '5rem',
             display: 'flex',
+            flexDirection: 'column',
             justifyContent: 'center',
             alignContent: 'center',
             background: 'linear-gradient(to bottom, #000, #000 50%, #222 50%,#222)',
@@ -31,7 +32,15 @@ function SectionOneBg() {
             animation: `${gradientMove} 200ms ease infinite`,
             backgroundPosition: "center",
             backgroundSize: "cover",
+            minHeight: '980px',
             height:"150vh",
+            '@media (max-width:600px)':{
+                height:"75vh",
+                minHeight: 'auto',
+            },
+            '@media (max-width:1200px)':{
+                height:"100vh"
+            },
             border: 'black solid 1px',
             zIndex: '1'
             }}
