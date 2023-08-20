@@ -7,9 +7,14 @@ import Image from 'next/image';
 import VideoBg from './Videobg.js';
 import VideoPlayer from './Videoplayer.js';
 import { staticPageGenerationTimeout } from "@/next.config";
+import HeaderNavbar from "./Navbar";
 
 function SectionOneBg() {
-
+    const gradientMove = keyframes`
+    0%{background-size: 100% 4px}
+    50%{background-size: 100% 2px}
+    100%{background-size: 100% 4px}
+    `
     return (
         <>
         
@@ -17,18 +22,21 @@ function SectionOneBg() {
             component="div"
             maxWidth='false'
             sx={{
+            MarginBottom: '5rem',
             display: 'flex',
             justifyContent: 'center',
             alignContent: 'center',
-            backgroundImage: 'url(/assets/tv-static.gif)',
+            background: 'linear-gradient(to bottom, #000, #000 50%, #222 50%,#222)',
+            backgroundSize: '100% 4px',
+            animation: `${gradientMove} 200ms ease infinite`,
             backgroundPosition: "center",
             backgroundSize: "cover",
-            minHeight:'960px',
-            height:"90vh",
+            height:"150vh",
             border: 'black solid 1px',
             zIndex: '1'
             }}
-            >
+            >   
+                <HeaderNavbar></HeaderNavbar>
                 <VideoBg>
                 </VideoBg>
             </Container>

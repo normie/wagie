@@ -15,10 +15,6 @@ export default function Home() {
     <>
       <div className="App">
     
-        <HeaderNavbar>
-            
-        </HeaderNavbar>
-      
         <SectionOneBg>
         </SectionOneBg>
           {/*

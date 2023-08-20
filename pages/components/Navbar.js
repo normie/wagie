@@ -29,21 +29,16 @@ function HeaderNavbar() {
             <Container className='header' maxWidth="false"
             sx={{
                 display:"flex",
-                flexDirection:"row",
-                alignItems:"center",
-                justifyContent:"center",
+                paddingLeft: "0",
+                paddingRight: "0",
                 position:"relative",
-                padding:"2rem",
+                paddingBottom:"1rem",
+                flexDirection:"column",
                 flexShrink: "2",
                 flexWrap: "wrap",
             }}
             >
-                
-                    <div className="title-container" >
-                        Fresco Corporation
-                    </div>
-                    {/*
-                        <div className='navbar-container'>
+                <div className='navbar-container'>
                             <ul className="nav-menu">
                                 <li>
                                     <Button 
@@ -94,7 +89,12 @@ function HeaderNavbar() {
                                     </Button>
                                 </li>
                             </ul>
-                        </div>
+                    </div>
+                    <div className="title-container" >
+                        Fresco Corporation
+                    </div>
+                    {/*
+                        
                      */}
             </Container>
         </>
