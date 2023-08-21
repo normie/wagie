@@ -22,8 +22,8 @@ function VideoBg() {
         
             <div className="background-container">
                 <div className="wrapper-container">
-                    <iframe src='https://www.youtube.com/embed/piNI6hRyPzM?wmode=opaque'
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    <iframe src={videoUrl} 
+                    title="YouTube video player" wmode="Opaque" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen >
                     </iframe>
                 </div>
