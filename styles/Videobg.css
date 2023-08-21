@@ -15,16 +15,17 @@
 }
 .wrapper-container{
     position: relative;
-    z-index: 1;
     background: url('../public/assets/best1.png') center center no-repeat;
     background-size: contain;
 }
 .overlay-container{
-    position:absolute;
-    z-index: 99;
-    background: url('../public/assets/best1.png') center center no-repeat;
-    background-size: contain;
-    
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    z-index: -1;
 }
 .wrapper-container iframe{
     box-sizing: border-box;
