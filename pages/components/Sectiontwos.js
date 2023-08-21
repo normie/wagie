@@ -55,11 +55,12 @@ function Sectiontwoslide(props) {
                                 paddingRight: '20px',
                                 display: 'inline-block',
                                 height: "100%",
-                                minWidth: "1655px",
-                                maxWidth: "1660px",
+                                minWidth: "1720px",
+                                maxWidth: "1735px",
                                 minHeight: "300px",
                                 backgroundImage: `url(${row[j % 2]})`,
-                                animation: `${i % 2 == 0 ? slideRight : slideLeft} 40s linear infinite `
+                                backgroundSize: 'contain',
+                                animation: `${i % 2 == 0 ? slideRight : slideLeft} 30s linear infinite `
                             }} />
                     )}
                 </Container>
