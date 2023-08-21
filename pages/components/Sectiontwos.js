@@ -51,10 +51,12 @@ function Sectiontwoslide(props) {
                             key={j}
                             maxWidth="false"
                             sx={{
+                                overflow: 'auto',
+                                paddingRight: '20px',
                                 display: 'inline-block',
                                 height: "100%",
-                                width: "100%",
-                                minWidth: "1500px",
+                                minWidth: "1655px",
+                                maxWidth: "1660px",
                                 minHeight: "300px",
                                 backgroundImage: `url(${row[j % 2]})`,
                                 animation: `${i % 2 == 0 ? slideRight : slideLeft} 40s linear infinite `
