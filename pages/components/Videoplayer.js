@@ -6,19 +6,15 @@ import ReactPlayer from 'react-player';
 
 
 function VideoPlayer() {
-    const videoUrl = 'https://player.vimeo.com/video/854420264?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+    const videoUrl = 'https://www.youtube.com/embed/piNI6hRyPzM?wmode=transparent&autoplay=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&list=PLFaEw-2w6HsVZs8hmWdbpEaaRCuZ1V35a'
     return (
         <>
-            <Container className='videoWrapper' fixed={true}>
-                <ReactPlayer width='100%' minWidth='800px' className ='react-player'
-                maxWidth='1000px' 
-                height ='100%' objectFit='fill' 
-                maxHeight='800px' 
-                loop={true}
-                url={`${videoUrl}`}
-                controls
-               ></ReactPlayer>
-            </Container>
+            
+            <iframe src={videoUrl} 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen >
+            </iframe>
+
         </>
     )
     
