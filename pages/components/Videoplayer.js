@@ -12,7 +12,7 @@ function VideoPlayer() {
         <>
             
             <iframe src={videoUrl} 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen >
+            title="YouTube video player" wmode="Opaque" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; opaque" >
             </iframe>
         </>
     )

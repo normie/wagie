@@ -14,12 +14,16 @@
 
 }
 .wrapper-container{
-    position: absolute;
-    z-index: 9999;
+    position: relative;
+    z-index: 1;
     background: url('../public/assets/best1.png') center center no-repeat;
     background-size: contain;
 }
-.wrapper-container::before{
+.overlay-container{
+    position:absolute;
+    z-index: 99;
+    background: url('../public/assets/best1.png') center center no-repeat;
+    background-size: contain;
     
 }
 .wrapper-container iframe{

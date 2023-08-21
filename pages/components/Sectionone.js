@@ -32,7 +32,7 @@ function SectionOneBg() {
             animation: `${gradientMove} 200ms ease infinite`,
             backgroundPosition: "center",
             backgroundSize: "cover",
-            minHeight: '980px',
+            minHeight: '1280px',
             height:"150vh",
             '@media (max-width:600px)':{
                 height:"500px",

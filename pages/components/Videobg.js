@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 
 function VideoBg() {
-    const videoUrl = 'https://www.youtube.com/embed/piNI6hRyPzM?wmode=transparent&autoplay=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&list=PLFaEw-2w6HsVZs8hmWdbpEaaRCuZ1V35a'
+    const videoUrl = 'https://www.youtube.com/embed/piNI6hRyPzM?wmode=opaque&autoplay=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&list=PLFaEw-2w6HsVZs8hmWdbpEaaRCuZ1V35a'
     const boxStyle = {
         '@media (min-width:600px)':{
             height: '40%'
@@ -22,10 +22,12 @@ function VideoBg() {
         
             <div className="background-container">
                 <div className="wrapper-container">
-                    <iframe src={videoUrl} 
+                    <iframe src='https://www.youtube.com/embed/piNI6hRyPzM?wmode=opaque'
                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen >
                     </iframe>
+                </div>
+                <div className="overlay-container">
                 </div>
             </div>
             
