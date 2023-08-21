@@ -10,20 +10,23 @@
     padding-top: 25px;
     padding-bottom: 67.5%;
     height: 0;
-    background: url('../public/assets/best1.png') center center no-repeat;
-    background-size: contain;
    
 
 }
 .wrapper-container{
-    position: inherit;
+    position: absolute;
     z-index: 9999;
+    background: url('../public/assets/best1.png') center center no-repeat;
+    background-size: contain;
+}
+.wrapper-container::before{
+    
 }
 .wrapper-container iframe{
     box-sizing: border-box;
     
     padding: 10.9% 17.8% 10.8%;
-    position: absolute;
+
     top: 0;
     left: 0;
     width: 100%;
