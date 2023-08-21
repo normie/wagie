@@ -9,7 +9,6 @@ import Windowmint from './components/Mintwindow';
 import Sectiontwoslide from './components/Sectiontwos';
 import Foot from './components/Footer';
 
-
 export default function Home() {
   return (
     <>

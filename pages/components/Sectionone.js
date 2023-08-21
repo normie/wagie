@@ -35,14 +35,15 @@ function SectionOneBg() {
             minHeight: '980px',
             height:"150vh",
             '@media (max-width:600px)':{
-                height:"75vh",
-                minHeight: 'auto',
+                height:"500px",
+                minHeight: '400px',
+                maxHeight: '600px !important',
             },
             '@media (max-width:1200px)':{
                 height:"100vh"
             },
             border: 'black solid 1px',
-            zIndex: '1'
+            zIndex: '0'
             }}
             >   
                 <HeaderNavbar></HeaderNavbar>

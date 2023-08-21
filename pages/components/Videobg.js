@@ -8,7 +8,10 @@ import ReactPlayer from 'react-player';
 import best1 from "../../public/assets/best1.png";
 import Image from 'next/image';
 
+
+
 function VideoBg() {
+    const videoUrl = 'https://www.youtube.com/embed/piNI6hRyPzM?wmode=transparent&autoplay=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&list=PLFaEw-2w6HsVZs8hmWdbpEaaRCuZ1V35a'
     const boxStyle = {
         '@media (min-width:600px)':{
             height: '40%'
@@ -17,10 +20,28 @@ function VideoBg() {
     return (
         <>
         
-            <Box 
+            <div className="background-container">
+                <div className="wrapper-container">
+                    <iframe src={videoUrl} 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen >
+                    </iframe>
+                </div>
+            </div>
+            
+        </>
+
+        
+    )
+}
+
+export default VideoBg;
+
+/*<Box 
             maxWidth='false'
             maxHeight='false'
             sx={{
+            padding:'3rem',
             position:'relative',
             display:'flex',
             justifyContent: 'center',
@@ -48,19 +69,10 @@ function VideoBg() {
             width: '70vw',
             border: 'white solid 1px',
             borderRadius: '.2em',
-            zIndex: '5',
+            zIndex: '20',
             overflow: 'hidden',
             marginBottom:'3rem',
             
             }}
             >
-                <VideoPlayer></VideoPlayer>
-            </Box>
-            
-        </>
-
-        
-    )
-}
-
-export default VideoBg;
+            </Box>*/
