@@ -44,7 +44,7 @@ function Sectiontwoslide(props) {
                 <Container component="div" maxWidth="false"
                     key={i}
                     sx={{
-                        overflow: 'hidden',
+                        
                         whiteSpace: 'nowrap',
                         position: 'relative',
 
@@ -59,9 +59,10 @@ function Sectiontwoslide(props) {
                                 paddingRight: '20px',
                                 display: 'inline-block',
                                 height: "100%",
-                                minWidth: "1720px",
-                                maxWidth: "1735px",
+                                minWidth: "1735px",
+                                maxWidth: "1750px",
                                 minHeight: "300px",
+                                paddingRight: "10px",
                                 backgroundImage: `url(${row[j % 2]})`,
                                 backgroundSize: 'contain',
                                 animation: `${i % 2 == 0 ? slideRight : slideLeft} 20s linear infinite `
