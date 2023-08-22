@@ -16,10 +16,10 @@ function Mintbar(props) {
                 padding: '2rem',
             }}> 
                 <Container>
-                    <Typography variant='h2'>
-                        Mint Info
+                    <div className="mint-text">
+                        <h2><span id="offset">Mint</span> Info</h2>
                         
-                    </Typography>
+                    </div>
                 </Container>
             </Container>
         </>

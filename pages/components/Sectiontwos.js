@@ -10,19 +10,23 @@ function Sectiontwoslide(props) {
 
     const slideRight = keyframes`
     0% {
-        transform: translateX(-50px);
+        transform: translateX(0);
     }
+    
     100% {
-        transform: translateX(calc(-1500px * 2 - 50px));
+        transform: translateX(-200%);
     }
     `;
     const slideLeft = keyframes`
+    
     0% {
-        transform: translateX(calc(-1500px * 2 - 50px));
-    }
-    100% {
-        transform: translateX(-50px);
-    }
+            transform: translateX(-200%);
+        }
+        
+        100% {
+            transform: translateX(-0%);
+        }
+      }
     `;
 
     let rows = React.useMemo(() => {
@@ -46,7 +50,7 @@ function Sectiontwoslide(props) {
 
                     }}
                 >
-                    {[...Array(3)].map((x, j) =>
+                    {[...Array(4)].map((x, j) =>
                         <Container component="div"
                             key={j}
                             maxWidth="false"
@@ -60,7 +64,7 @@ function Sectiontwoslide(props) {
                                 minHeight: "300px",
                                 backgroundImage: `url(${row[j % 2]})`,
                                 backgroundSize: 'contain',
-                                animation: `${i % 2 == 0 ? slideRight : slideLeft} 30s linear infinite `
+                                animation: `${i % 2 == 0 ? slideRight : slideLeft} 20s linear infinite `
                             }} />
                     )}
                 </Container>
@@ -80,6 +84,7 @@ function importImages() {
 
 function randomNumber(array) {
     const randomImage = array[Math.floor(Math.random() * array.length)];
+    
     return randomImage;
 
 }
