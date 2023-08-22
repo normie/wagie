@@ -76,7 +76,7 @@ function Sectiontwoslide(props) {
 }
 function importImages() {
     const images = [];
-    for (let x=1; x<8; x++) {
+    for (let x=1; x<9; x++) {
         images.push([`/assets/frescoslide/${x}.png`])
     }
     return images;
@@ -84,7 +84,8 @@ function importImages() {
 
 
 function randomNumber(array) {
-    const randomImage = array[Math.floor(Math.random() * array.length)];
+    let randomImage = array[Math.floor(Math.random() * array.length)];
+
     
     return randomImage;
 
