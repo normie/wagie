@@ -34,7 +34,6 @@ function Sectiontwoslide(props) {
             [randomNumber(importImages()), randomNumber(importImages())],
             [randomNumber(importImages()), randomNumber(importImages())],
             [randomNumber(importImages()), randomNumber(importImages())],
-            [randomNumber(importImages()), randomNumber(importImages())],
         ]
     }, [importImages()]);
 
