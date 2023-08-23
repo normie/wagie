@@ -22,7 +22,6 @@ function SectionOneBg() {
             component="div"
             maxWidth='false'
             sx={{
-            MarginBottom: '5rem',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -32,15 +31,16 @@ function SectionOneBg() {
             animation: `${gradientMove} 200ms ease infinite`,
             backgroundPosition: "center",
             backgroundSize: "cover",
-            minHeight: '1280px',
-            height:"150vh",
+            minHeight: '1000px',
+            height:"100vh",
             '@media (max-width:600px)':{
                 height:"500px",
                 minHeight: '400px',
                 maxHeight: '600px !important',
             },
             '@media (max-width:1200px)':{
-                height:"100vh"
+                height:"50vh",
+                minHeight: "950px",
             },
             border: 'black solid 1px',
             zIndex: '0'

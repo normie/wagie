@@ -19,7 +19,9 @@ h2{
     font-family: 'roboto';
     animation: text-flicker 5s linear infinite;
 }
-
+@media screen and (min-w) {
+  
+}
 /*.heart{
   margin-left: 1.5rem;
   height:100px;

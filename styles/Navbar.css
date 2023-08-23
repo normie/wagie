@@ -22,8 +22,8 @@ and (max-width:750px)
     color:white;
     text-align:center;
     margin-right:auto;
-    
-    font-size:9vw;
+    line-height: 75%;
+    font-size:8.5vw;
     font-weight: bold;
     position: relative;
     max-width: 90vw;
@@ -48,7 +48,6 @@ and (max-width:750px)
     position:relative;
     display:flex;
     height:40px;
-    padding-bottom: 10px;
     justify-content: flex-end;
     align-items: center;
     overflow:hidden;

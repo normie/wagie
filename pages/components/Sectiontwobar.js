@@ -13,8 +13,10 @@ function Mintbar(props) {
             <Container className="mintbar-container" fluid
             sx={{
                 color: "white",
+                paddingTop:'1rem !important',
                 padding: '2rem',
                 height:'250px',
+                width: '100%',
                 marginTop:'auto',
                 marginBottom: 'auto',
             }}> 

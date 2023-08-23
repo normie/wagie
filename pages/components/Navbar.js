@@ -28,10 +28,12 @@ function HeaderNavbar() {
         <>
             <Container className='header' maxWidth="false"
             sx={{
+                paddingTop:"1rem",
                 display:"flex",
                 paddingLeft: "0",
                 paddingRight: "0",
                 position:"relative",
+                marginBottom: "auto",
                 paddingBottom:"2rem",
                 flexDirection:"column",
                 flexShrink: "2",
