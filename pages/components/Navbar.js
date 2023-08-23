@@ -32,10 +32,11 @@ function HeaderNavbar() {
                 paddingLeft: "0",
                 paddingRight: "0",
                 position:"relative",
-                paddingBottom:"1rem",
+                paddingBottom:"2rem",
                 flexDirection:"column",
                 flexShrink: "2",
-                flexWrap: "wrap",
+                flexWrap:"wrap",
+                
             }}
             >
                 <div className='navbar-container'>

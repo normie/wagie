@@ -14,10 +14,13 @@ function Mintbar(props) {
             sx={{
                 color: "white",
                 padding: '2rem',
+                height:'250px',
+                marginTop:'auto',
+                marginBottom: 'auto',
             }}> 
                 <Container>
                     <div className="mint-text">
-                        <h2><span id="offset">Mint</span> Info</h2>
+                        <h2><span id="offset">Wa</span>gie</h2><div class="heart"></div>
                         
                     </div>
                 </Container>

@@ -1,9 +1,18 @@
 body{
   padding:0px;
   margin:0px;
-  background-color: #343A40;
+  background: linear-gradient(to bottom, #000, #000 50%, #222 50%,#222);
+  background-size: 100% 4px;
+  animation: gradientMove 200ms ease infinite;
+  background-position: center;
+  background-size: cover;
 }
 .App {
   text-align: center;
 }
 
+@keyframes gradientMove {
+  0%{background-size: 100% 4px}
+  50%{background-size: 100% 2px}
+  100%{background-size: 100% 4px}
+}
