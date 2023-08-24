@@ -6,10 +6,12 @@ import officebg from "../../public/assets/office.png"
 import sweatshop from "../../public/assets/sweatshop.png"
 import Windowmint from "./Mintwindow";
 
+
 function SectiontwobgContainer(props) {
+    
     return (
         <>
-            <div className="section-two-bg" id="sectionTwo">
+            <div  className="section-two-bg" id="sectionTwo">
                 {props.children}</div>
         </>
     )

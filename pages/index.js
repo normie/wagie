@@ -1,5 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import { useRef } from 'react';
 
 import HeaderNavbar from './components/Navbar';
 import SectionOneBg from './components/Sectionone';
@@ -10,6 +9,7 @@ import Sectiontwoslide from './components/Sectiontwos';
 import Foot from './components/Footer';
 
 export default function Home() {
+  
   return (
     <>
       <div className="App">
@@ -19,7 +19,7 @@ export default function Home() {
           
         <Mintbar></Mintbar>
         
-        <SectionTwoBg>
+        <SectionTwoBg >
           <Windowmint></Windowmint>
           <Sectiontwoslide>
           </Sectiontwoslide>
