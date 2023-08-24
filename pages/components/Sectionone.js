@@ -26,17 +26,22 @@ function SectionOneBg() {
             flexDirection: 'column',
             justifyContent: 'center',
             alignContent: 'center',
-            background: 'linear-gradient(to bottom, #000, #000 50%, #222 50%,#222)',
-            backgroundSize: '100% 4px',
-            animation: `${gradientMove} 200ms ease infinite`,
-            backgroundPosition: "center",
             backgroundSize: "cover",
             minHeight: '1000px',
             height:"100vh",
+            '@media (max-width:400px)':{
+                minHeight: '450px !important',
+                height: '500px !important',
+                maxHeight: '550px !important'
+            },
             '@media (max-width:600px)':{
-                height:"500px",
-                minHeight: '400px',
+                height:'550px !important',
+                minHeight: '525px !important',
                 maxHeight: '600px !important',
+            },
+            '@media (max-width:950px)':{
+                height:'75vh !important',
+                minHeight: '800px !important',
             },
             '@media (max-width:1200px)':{
                 height:"50vh",

@@ -71,22 +71,28 @@ iframe{
 (max-width: 600px) {
     iframe{
         max-width: 75% !important;
-        padding: 9% 0% 18% !important;
+        padding: 4% 0% 15% !important;
     }
 }
 @media screen and
 (max-width: 555px) {
     iframe{
-        padding: 10% 0.5% 26% !important;
+        padding: 5% 0.5% 17% !important;
     }
 }
 @media screen and
 (max-width:510px) {
     iframe{
+        padding: 6% 0.5% 20% !important;
         height: 440px !important;
-        width: 510px !important;
     }
     
+}
+@media screen and
+(max-width:485px) {
+    iframe{
+        padding: 8% 0% 23% !important;
+    }
 }
 @media screen and
 (max-width:455px) {
