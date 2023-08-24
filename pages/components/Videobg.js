@@ -20,15 +20,15 @@ function VideoBg() {
     return (
         <>
         
-            <div className="background-container">
-                <div className="wrapper-container">
-                    <iframe src={videoUrl} 
+            <div className="wrapper-container">
+                <div className="background-container">
+                </div>
+                <iframe src={videoUrl} 
                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen >
-                    </iframe>
-                </div>
-                <div className="overlay-container">
-                </div>
+                </iframe>
+
+
             </div>
             
         </>
