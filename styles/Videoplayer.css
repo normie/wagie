@@ -39,7 +39,7 @@ iframe{
 (max-width: 980px) {
     iframe{
         max-width: 72.5% !important;
-        padding: 0% 0.25% 7% !important;
+        padding: 0% 0.25% 9% !important;
         max-height: 90% !important;
     }
 }

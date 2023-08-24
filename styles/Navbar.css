@@ -45,6 +45,7 @@ and (max-width:750px)
 .navbar-container{
     float:left;
     margin-left:auto;
+    margin-bottom: 0.5rem;
     position:relative;
     display:flex;
     height:40px;

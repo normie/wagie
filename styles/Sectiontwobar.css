@@ -5,10 +5,10 @@
     border:5px  #222;
     background: rgba(0,0,0,0.1);
     border-radius: 1rem;
-    font-size: 4vw;
+    font-size: 6vw;
     height:20vh;
-    width: 35vw;
-    margin-left: auto !important;
+    width: 60vw;
+    margin-left: auto ;
     margin-right: auto;
     animation: border-flicker 3s linear infinite;
     margin-bottom: 2rem;
@@ -19,8 +19,14 @@ h2{
     font-family: 'roboto';
     animation: text-flicker 5s linear infinite;
 }
-@media screen and (min-w) {
-  
+@media screen and 
+(max-width:600px) {
+  .mint-text{
+    width: 75vw;
+  }
+  .heart{
+    width:65px !important;
+  }
 }
 /*.heart{
   margin-left: 1.5rem;
@@ -39,7 +45,6 @@ h2{
   aspect-ratio: 1;
   border-image: radial-gradient(var(--c) 69%,#0000 70%) 84.5%/50%;
   clip-path: polygon(-42% 0,50% 91%, 142% 0);
-  box-shadow:  #f20044;
   animation: heart 0.7s linear infinite;
 }
 @keyframes heart{

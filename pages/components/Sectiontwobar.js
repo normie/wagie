@@ -12,6 +12,9 @@ function Mintbar(props) {
         <>
             <Container className="mintbar-container" fluid
             sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
                 color: "white",
                 paddingTop:'1rem !important',
                 padding: '2rem',
