@@ -22,6 +22,7 @@ function SectionOneBg() {
             <Container
             component="div"
             maxWidth='false'
+            id='sectionOne'
             sx={{
             display: 'flex',
             flexDirection: 'column',

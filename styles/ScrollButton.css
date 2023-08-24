@@ -9,6 +9,12 @@
     right: 100px;
     z-index: 20;
   }
+  .icon-position-top{
+    position:fixed;
+    bottom: 170px;
+    right: 100px;
+    z-index: 20;
+  }
   .icon-style{
     background-color: #222;
     border: 2px solid lightgray;
@@ -31,13 +37,13 @@
       transform: translateY(0px);
     }
     25%{
-      transform: translateY(20px);
+      transform: translateY(10px);
     }
     50%{
       transform: translateY(0px);
     }
     75%{
-      transform: translateY(-20px);
+      transform: translateY(-10px);
     }
     100%{
       transform: translateY(0px);

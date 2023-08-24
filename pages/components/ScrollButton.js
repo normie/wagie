@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react';
-import {FaAngleDown} from 'react-icons/fa'
+import {FaAngleDown,FaAngleUp} from 'react-icons/fa';
+import Link from 'next/link';
 
 
 function ScollBtn() {
@@ -10,13 +11,12 @@ function ScollBtn() {
     return (
         <>
             <div className="top-to-btm">
-                {" "}
-                {showBotBtn && (
-                <a href='#sectionTwo'>
-                <FaAngleDown className='icon-position icon-style'
-                />
-                </a>
-                )}{" "}
+                <Link href='/'>
+                <FaAngleUp className='icon-position-top icon-style'/>
+                </Link>
+                <Link href='#sectionTwo'>
+                <FaAngleDown className='icon-position icon-style'/>
+                </Link>
             </div>
         </>
     )
