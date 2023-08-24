@@ -50,10 +50,9 @@ function HeaderNavbar() {
                                     }}
                                     sx={{
                                         minWidth: '32px',
-                                        color: 'black',
                                     }}>
                                     <div className="nav-icon">
-                                        <Image className="img-icon" src="/assets/twitterlogo.svg" alt ="twitter"
+                                        <Image className="img-icon" src="/assets/twitter.svg" alt ="twitter" color="white"
                                         width={32} height={32}/>
                                     </div>
                                     </Button>
@@ -61,10 +60,11 @@ function HeaderNavbar() {
                                 <li>
                                     <Button sx={{
                                         minWidth: '32px',
-                                        color: 'black',
+                                        
                                     }}>
                                     <div className ="nav-icon">
-                                        <Image className="img-icon" src="/assets/Telegram_logo.png" alt="telegram"
+                                        <Image className="img-icon" src="/assets/telegram.svg" alt="telegram" 
+                                        style={{fill: "white"}}
                                         width={32} height={32}/>
                                     </div>
                                     </Button>
@@ -75,7 +75,7 @@ function HeaderNavbar() {
                                         color: 'black',
                                     }}>
                                     <div className= "nav-icon">
-                                        <Image className= "img-icon" src="/assets/discord-mark-white.png" alt="discord"
+                                        <Image className= "img-icon" src="/assets/discord.svg" alt="discord"
                                         width={32} height={32}/>
                                     </div>
                                     </Button>
@@ -86,7 +86,7 @@ function HeaderNavbar() {
                                         color: 'black',
                                     }}>
                                     <div className='nav-icon'>
-                                        <Image className= "img-icon" src="/assets/opensea-logo.png" alt='MarketPlace'
+                                        <Image className= "img-icon" src="/assets/opensea.svg" alt='MarketPlace'
                                         width={32} height={32}/>
                                     </div>
                                     </Button>
