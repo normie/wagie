@@ -9,7 +9,7 @@ import Windowmint from "./Mintwindow";
 function SectiontwobgContainer(props) {
     return (
         <>
-            <div className="section-two-bg">
+            <div className="section-two-bg" id="sectionTwo">
                 {props.children}</div>
         </>
     )

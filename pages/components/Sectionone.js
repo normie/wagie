@@ -8,6 +8,7 @@ import VideoBg from './Videobg.js';
 import VideoPlayer from './Videoplayer.js';
 import { staticPageGenerationTimeout } from "@/next.config";
 import HeaderNavbar from "./Navbar";
+import ScrollBtn from "./ScrollButton.js";
 
 function SectionOneBg() {
     const gradientMove = keyframes`
@@ -27,7 +28,7 @@ function SectionOneBg() {
             justifyContent: 'center',
             alignContent: 'center',
             backgroundSize: "cover",
-            minHeight: '1000px',
+            minHeight: '1050px',
             height:"100vh",
             '@media (max-width:1200px)':{
                 height:"50vh",
@@ -54,6 +55,7 @@ function SectionOneBg() {
                 <HeaderNavbar></HeaderNavbar>
                 <VideoBg>
                 </VideoBg>
+                <ScrollBtn></ScrollBtn>
             </Container>
             
         </>

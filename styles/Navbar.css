@@ -69,7 +69,9 @@ ul{
     list-style:none;
     
 }
-
+.nav-icon:hover{
+    opacity: 0.5;
+}
 
 .img-icon{
     height:32px;

@@ -4,6 +4,7 @@ import '../styles/Sectiontwocontainer.css';
 import '../styles/Videoplayer.css';
 import '../styles/Videobg.css';
 import '../styles/Sectiontwobar.css';
+import '../styles/ScrollButton.css';
 
 export default function App({ Component, pageProps }) {
   return <Component {...pageProps} />
