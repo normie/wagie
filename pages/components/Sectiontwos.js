@@ -46,6 +46,7 @@ function Sectiontwoslide(props) {
                         
                         whiteSpace: 'nowrap',
                         position: 'relative',
+                        overflow: 'hidden',
 
                     }}
                 >
