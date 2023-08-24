@@ -40,7 +40,7 @@ iframe{
     iframe{
         max-width: 72.5% !important;
         padding: 0% 0.25% 7% !important;
-        max-height: 70% !important;
+        max-height: 90% !important;
     }
 }
 @media screen and
@@ -53,7 +53,7 @@ iframe{
 @media screen and 
 (max-width:760px){
     iframe{
-        max-height: 65% !important;
+        max-height: 80% !important;
         padding: 5% 0% 14% !important;
     }
     

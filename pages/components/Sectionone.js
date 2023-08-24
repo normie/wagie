@@ -29,23 +29,23 @@ function SectionOneBg() {
             backgroundSize: "cover",
             minHeight: '1000px',
             height:"100vh",
-            '@media (max-width:400px)':{
-                minHeight: '450px !important',
-                height: '500px !important',
-                maxHeight: '550px !important'
+            '@media (max-width:1200px)':{
+                height:"50vh",
+                minHeight: "950px",
+            },
+            '@media (max-width:950px)':{
+                height:'75vh ',
+                minHeight: '800px !important',
             },
             '@media (max-width:600px)':{
                 height:'550px !important',
                 minHeight: '525px !important',
                 maxHeight: '600px !important',
             },
-            '@media (max-width:950px)':{
-                height:'75vh !important',
-                minHeight: '800px !important',
-            },
-            '@media (max-width:1200px)':{
-                height:"50vh",
-                minHeight: "950px",
+            '@media (max-width:400px)':{
+                minHeight: '450px !important',
+                height: '500px !important',
+                maxHeight: '550px !important'
             },
             border: 'black solid 1px',
             zIndex: '0'
