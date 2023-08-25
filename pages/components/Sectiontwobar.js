@@ -25,7 +25,7 @@ function Mintbar(props) {
             }}> 
                 <Container>
                     <div className="mint-text">
-                        <h2><span id="offset">Wa</span>gie</h2><div class="heart"></div>
+                        <h2><span id="offset">Mint </span>your <span>Wagie</span></h2><div class="heart"></div>
                         
                     </div>
                 </Container>

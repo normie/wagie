@@ -11,11 +11,7 @@ import HeaderNavbar from "./Navbar";
 import ScrollBtn from "./ScrollButton.js";
 
 function SectionOneBg() {
-    const gradientMove = keyframes`
-    0%{background-size: 100% 4px}
-    50%{background-size: 100% 2px}
-    100%{background-size: 100% 4px}
-    `
+
     return (
         <>
         
@@ -32,12 +28,20 @@ function SectionOneBg() {
             minHeight: '1050px',
             height:"100vh",
             '@media (max-width:1200px)':{
-                height:"50vh",
-                minHeight: "950px",
+                height:"55vh",
+                minHeight: "975px",
             },
-            '@media (max-width:950px)':{
+            '@media (max-width:980px)':{
                 height:'75vh ',
-                minHeight: '800px !important',
+                minHeight: '900px !important',
+            },
+            '@media (max-width:780px)':{
+                minHeight: '750px !important',
+                height:"50vh",
+            },
+            '@media (max-width:720px)':{
+                minHeight: '700px !important',
+
             },
             '@media (max-width:600px)':{
                 height:'550px !important',
@@ -45,9 +49,7 @@ function SectionOneBg() {
                 maxHeight: '600px !important',
             },
             '@media (max-width:400px)':{
-                minHeight: '450px !important',
-                height: '500px !important',
-                maxHeight: '550px !important'
+                maxHeight: '575px !important'
             },
             border: 'black solid 1px',
             zIndex: '0'

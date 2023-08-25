@@ -13,7 +13,7 @@ iframe{
     width: 100%;
     height: 100%;
     max-width: 700px;
-    max-height: 620px;
+    max-height: 700px;
     min-height: 300px;
     padding: 0% 0% 4%;
     position: absolute;
@@ -25,13 +25,13 @@ iframe{
 @media screen and
 (max-width:1560px){
     iframe{
-        padding: 0% 0% 4% !important;
+        padding: 1% 0% 8% !important;
     }
 }
 @media screen and 
 (max-width:1260px){
     iframe{
-        padding: 0% 0% 4% !important;
+        padding: 0% 0% 10% !important;
     }
 }
 
@@ -39,22 +39,30 @@ iframe{
 (max-width: 980px) {
     iframe{
         max-width: 72.5% !important;
-        padding: 0% 0.25% 9% !important;
+        padding: 5% 0.25% 11% !important;
         max-height: 90% !important;
     }
 }
 @media screen and
-(max-width:870px) {
+(max-width:890px) {
     iframe{
-        padding: 3% 0% 11% !important;
+        padding: 4% 0% 14% !important;
     }
     
+}
+@media screen and
+(max-width:825px) {
+    iframe{
+        max-height: 600px !important;
+        padding: 5% 1% 15% !important;
+    }
 }
 @media screen and 
 (max-width:760px){
     iframe{
-        max-height: 80% !important;
-        padding: 5% 0% 14% !important;
+        max-height: 550px !important;
+        padding: 6% 0% 16% !important;
+        width: 650px;
     }
     
 }
@@ -63,7 +71,7 @@ iframe{
     iframe{
         max-height: 500px !important;
         width: 575px !important;
-        padding: 5% 0% 15% !important;
+        padding: 7% 0% 17% !important;
     }
     
 }
@@ -81,9 +89,10 @@ iframe{
     }
 }
 @media screen and
-(max-width:510px) {
+(max-width:520px) {
     iframe{
-        padding: 6% 0.5% 20% !important;
+        max-width: 80% !important;
+        padding: 9% 3% 9% !important;
         height: 440px !important;
     }
     
@@ -91,16 +100,15 @@ iframe{
 @media screen and
 (max-width:485px) {
     iframe{
-        padding: 8% 0% 23% !important;
+        padding: 10% 0.8% 10% !important;
     }
 }
 @media screen and
 (max-width:455px) {
     iframe{
-        max-width: 80% !important;
         height: 400px !important;
-        width: 510px !important;
-        padding: 10% 0% 26% !important;
+        min-width: 375px !important;
+        padding: 5% 2% 5% !important;
     }
 }
 @media screen and
@@ -109,32 +117,37 @@ iframe{
         max-width: 100% !important;
         height: 360px !important;
         width: 470px !important;
-        padding: 9% 2% 26% !important;
+        padding: 0% 6% 0% !important;
     }
 }
 @media screen and
 (max-width:370px) {
     iframe{
-        padding: 13.1% 1% 32% !important;
+        max-width: 80% !important;
+        min-width: 350px !important;
+        padding: 0% 10% 1% !important;
     }
 }
 @media screen and 
 (max-width:340px){
     iframe{
-        padding: 15% 0% 39% !important;
+        padding: 0% 10% 1% !important;
     }
 }
 @media screen and
 (max-width:310px) {
     iframe{
-        width: 90% !important;
-        padding: 21.5% 0% 45% !important;
+        min-width: 275px !important;
+        width: 100% !important;
+        padding: 1.5% 0% 1.5% !important;
     }
 }
 @media screen and
 (max-width:280px) {
     iframe{
-        padding: 15% 0% 40% !important;
+        min-height: 375px !important;
+        min-width: 220px!important;
+        padding: 1.5% 0% 1.5% !important;
         width: 110% !important;
         max-height: 35vh   !important;
     }
