@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useRef,useEffect } from "react";
+import { useRef,useEffect,useState } from "react";
 import { YoutubePlayer} from "youtube-player";
 import Button from '@mui/material/Button';
 import { Box,Container, Paper, Slide } from "@mui/material";
@@ -9,13 +9,19 @@ import Player from 'react-player';
 let totalWatchTime = -1;
 
 function VideoPlayer() {
+    const [playing, setPlaying] = useState(false);
+    const [ready,setReady] = useState(false);
     const iframeRef = useRef(null);
+    const onReady = React.useCallback(() => {
+    })
 
     useEffect(() => {
        
     },[iframeRef]);
 
-
+    const playVideo = () => {
+        this.refs.iframeRef.play();
+    }
 
     const videoUrl = 'https://www.youtube.com/embed/piNI6hRyPzM'
     
