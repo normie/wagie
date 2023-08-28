@@ -4,9 +4,9 @@ import { Box,Container, Paper, Slide } from "@mui/material";
 import windowframe from "../../public/assets/netscape900.png";
 import windowframe1 from "../../public/assets/netscape730.png";
 import VideoPlayer from './Videoplayer';
-import ReactPlayer from 'react-player';
 import best1 from "../../public/assets/best1.png";
 import Image from 'next/image';
+import Player from 'react-player';
 
 
 
@@ -23,12 +23,7 @@ function VideoBg() {
             <div className="wrapper-container">
                 <div className="background-container">
                 </div>
-                <iframe src={videoUrl} 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen >
-                </iframe>
-
-
+                <VideoPlayer></VideoPlayer>
             </div>
             
         </>
@@ -38,6 +33,13 @@ function VideoBg() {
 }
 
 export default VideoBg;
+
+/*
+<iframe src={videoUrl} 
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen >
+</iframe>
+*/
 
 /*<Box 
             maxWidth='false'
