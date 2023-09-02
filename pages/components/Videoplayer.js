@@ -1,51 +1,103 @@
 import * as React from "react";
 import { useRef,useEffect,useState } from "react";
-import { YoutubePlayer} from "youtube-player";
 import Button from '@mui/material/Button';
-import { Box,Container, Paper, Slide } from "@mui/material";
-import { keyframes } from "@mui/material";
+import { Box,Container, Paper, Slide,Modal,Typography} from "@mui/material";
+import Image from 'next/image';
 import Player from 'react-player';
 
 let totalWatchTime = -1;
 
 function VideoPlayer() {
-    const [playing, setPlaying] = useState(false);
-    const [ready,setReady] = useState(false);
-    const iframeRef = useRef(null);
-    const onReady = React.useCallback(() => {
-    })
+  const iframeRef = useRef(null);
 
-    useEffect(() => {
-       
-    },[iframeRef]);
+  const [open, setOpen] = React.useState(false);
+  const [mute, setMute] = React.useState(true);
+  const [play, setPlay] = React.useState(true);
+  const [pause, setPause] = React.useState(false);
 
-    const playVideo = () => {
-        this.refs.iframeRef.play();
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  const handleMute = () => setMute(true);
+  const handleUnmute = () => setMute(false);
+  const handlePlay = () => setPlay(true);
+  const handlePause = () => setPlay(false);
+  const handleClick = () => {
+    while (true) {
+      handleUnmute();
+      handleClose();
+      return false;
     }
+  };
 
-    const videoUrl = 'https://www.youtube.com/embed/piNI6hRyPzM'
-    
-    return (
-        <>
-            
-            <Player
-            url={videoUrl}
-            ref={iframeRef}
-            title="Hero"
-            controls={false}
-            muted={true}
-            loop={true}
-            playing={true}
-            wrapper="wrapper-container"
-            width="100%"
-            height="100%"
-            onStart={() => console.log("media started!")}
-            onPause={() => console.log("PauseCallback, ", (totalWatchTime -= 1))}
-            onProgress={() =>
-            console.log("ProgressCallback, watch time: ", (totalWatchTime += 1))
-            }
-            >
-            </Player>
+  const videoUrl = "https://www.youtube.com/embed/piNI6hRyPzM";
+
+  const clearMultTimeout = (timeoutIDs) => {
+    for (const timeoutID of timeoutIDs) {
+      clearTimeout(timeoutID);
+    }
+  };
+
+  useEffect(() => {
+    const timeoutIDs = [
+      setTimeout(() => {
+        setOpen(true);
+      }, 1500),
+    ];
+    // clear timer if the component unmount
+    return () => clearTimeout(timeoutIDs);
+  }, []);
+
+  return (
+    <>
+      <Player
+        url={videoUrl}
+        ref={iframeRef}
+        title="Hero"
+        controls={false}
+        muted={mute}
+        loop={true}
+        playing={play}
+        wrapper="wrapper-container"
+        width="100%"
+        height="100%"
+        onStart={() => console.log("media started!")}
+        onPause={() => console.log("PauseCallback, ", (totalWatchTime -= 1))}
+        onProgress={() =>
+          console.log("ProgressCallback, watch time: ", (totalWatchTime += 1))
+        }
+      ></Player>
+      <div>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <div className="modal-container">
+            <div className="dialogue-box">
+              <div className="dialogue-title">
+                <Typography id="modal-modal-title">
+                  It looks like you are trying to access the Fresco Corporation.
+                  Do you need some help?
+                </Typography>
+              </div>
+              <div className="button-container">
+                <Button onClick={handleClick}>
+                  <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                    Yes
+                  </Typography>
+                </Button>
+                <Button onClick={handleClick}>
+                  <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                    Yes
+                  </Typography>
+                </Button>
+              </div>
+            </div>
+            <div className="clippy-container"></div>
+          </div>
+        </Modal>
+      </div>
         </>
     )
 }
