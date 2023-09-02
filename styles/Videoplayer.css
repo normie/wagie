@@ -19,7 +19,9 @@ iframe{
     padding: 3% 0% 3%;
     overflow:visible;
 }
-
+.modal-wrapper{
+    outline:none;
+}
   .modal-container {
     position: absolute;
     display: flex;
@@ -29,6 +31,7 @@ iframe{
     left: 50%;
     z-index: 9999;
     transform: translate(-50%, -50%);
+    outline:none;
   }
   .clippy-container {
     background: url("/assets/clippy.gif") center center no-repeat;

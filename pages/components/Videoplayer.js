@@ -66,7 +66,7 @@ function VideoPlayer() {
           console.log("ProgressCallback, watch time: ", (totalWatchTime += 1))
         }
       ></Player>
-      <div>
+      <div className="modal-wrapper">
         <Modal
           open={open}
           onClose={handleClose}
