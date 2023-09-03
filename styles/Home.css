@@ -6,6 +6,7 @@ body{
   animation: gradientMove 200ms ease infinite;
   background-position: center;
   background-size: cover;
+  min-height: 100vh;
 }
 .App {
   text-align: center;

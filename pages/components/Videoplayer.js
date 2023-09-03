@@ -71,7 +71,10 @@ function VideoPlayer() {
         }
       ></Player>
       <div className="modal-wrapper">
-        <Modal
+        <Modal 
+          disableScrollLock={false}
+          hideBackdrop={false}
+          keepMounted={true}
           open={open}
           onClose={handleClose}
           aria-labelledby="modal-modal-title"
