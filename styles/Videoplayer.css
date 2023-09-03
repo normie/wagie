@@ -25,7 +25,7 @@ iframe{
   .modal-container {
     position: absolute;
     display: flex;
-    width: 350px;
+    width: 420px;
     flex-direction: column;
     top: 50%;
     left: 50%;
@@ -44,7 +44,7 @@ iframe{
     content: "";
     display: block;
     position: absolute;
-    top: 50%;
+    top: 67%;
     left: 35%;
     width: 6vmin;
     height: 6vmin;
@@ -61,15 +61,21 @@ iframe{
     align-self: flex-end;
     bottom: 35vmin;
     left: 20vmin;
-    width: 50ch;
+    width: 275px;
+    height:300px;
     padding: 2vmin;
     background: #ffc;
     border-radius: 1vmin;
     border: 0.375vmin solid #666;
-    font-size: 10px;
+    font-size: 2rem;
     background-color: #ffc;
   }
+  .dialogue-title{
+    text-align: left;
+  }
   .button-container {
+    margin-top: 0.5rem;
+    gap:1rem;
     display: flex;
     width: 100%;
     justify-content: space-evenly;

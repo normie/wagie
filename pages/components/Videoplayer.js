@@ -3,12 +3,16 @@ import { useRef,useEffect,useState } from "react";
 import Button from '@mui/material/Button';
 import { Box,Container, Paper, Slide,Modal,Typography} from "@mui/material";
 import Image from 'next/image';
+import localFont from 'next/font/local'
 import Player from 'react-player';
 
 let totalWatchTime = -1;
 
+
 function VideoPlayer() {
   const iframeRef = useRef(null);
+  
+  
 
   const [open, setOpen] = React.useState(false);
   const [mute, setMute] = React.useState(true);
@@ -76,19 +80,51 @@ function VideoPlayer() {
           <div className="modal-container">
             <div className="dialogue-box">
               <div className="dialogue-title">
-                <Typography id="modal-modal-title">
+                <Typography id="modal-modal-title" sx= {{
+                  width:'250px',
+                  fontSize: '1.75rem',
+                  fontWeight: '100',
+                  fontFamily:"tahoma",
+                }}>
                   It looks like you are trying to access the Fresco Corporation.
                   Do you need some help?
                 </Typography>
               </div>
               <div className="button-container">
-                <Button onClick={handleClick}>
-                  <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                <Button onClick={handleClick} sx={{
+                  marginTop:'10px', 
+                  display:'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  width:'125px',
+                  color:'black',
+                  padding: '5px',
+                  border: '2px solid #666',
+                  
+                }}>
+                  <Typography id="modal-modal-description" sx={{ mt: 2,
+                    fontSize:'2rem',
+                    color:'black',
+                    opacity: '0.8',
+                    marginTop: '0px', }}>
                     Yes
                   </Typography>
                 </Button>
-                <Button onClick={handleClick}>
-                  <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                <Button onClick={handleClick} sx={{
+                  marginTop:'10px', 
+                  display:'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  width:'125px',
+                  color:'black',
+                  padding: '5px',
+                  border: '2px solid #666',
+                }}>
+                  <Typography id="modal-modal-description" sx={{ mt: 2,
+                    fontSize:'2rem',
+                    color:'black',
+                    opacity: '0.8',
+                    marginTop: '0px', }}>
                     Yes
                   </Typography>
                 </Button>

@@ -20,3 +20,7 @@ body{
 html{
   scroll-behavior: smooth;
 }
+@font-face {
+  font-family: 'Tahoma';
+  src: url(../public/assets/fonts/tahoma.ttf);
+}
