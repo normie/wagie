@@ -1,9 +1,10 @@
 @media screen 
-and (max-width:750px)
+and (max-width:805px)
 {
     .title-container{
         margin-top:1rem;
         height:70px !important;
+        letter-spacing: 0px !important;
     }
     .navbar-container{
         display:none !important;
@@ -17,7 +18,6 @@ and (max-width:750px)
 
 .title-container {
     font-family: 'ManyDots';
-    font-weight: 800;
     /*font-style:italic;*/
     text-shadow: 0.35vw 0.25vw 0.25vw rgba(251, 12, 12,1), 0px -0.25vw 0.35vw rgba(12, 79, 251,.5),-0.35vw 0px 0.25vw rgba(52, 251, 12, 1);
     animation: chromaticMove 5000ms ease infinite ,pulse ease 1000ms  infinite;
@@ -26,11 +26,11 @@ and (max-width:750px)
     padding-top:1.5rem;
     margin-right:auto;
     font-size:7.5vw;
-    font-weight: bold;
     position: relative;
-    max-width: 90vw;
+    max-width: 95vw;
     margin-left:auto;
     height:100px;
+    letter-spacing: 3px;
 }
 @keyframes chromaticMove { 
     0%{text-shadow: 0.35vw 0.25vw 0.25vw rgba(251, 12, 12,1), 0px -0.25vw 0.35vw rgba(12, 79, 251,.5),0px 0px -0.25vw rgba(52, 251, 12, 1);}
