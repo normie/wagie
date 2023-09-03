@@ -24,3 +24,7 @@ html{
   font-family: 'Tahoma';
   src: url(../public/assets/fonts/tahoma.ttf);
 }
+@font-face {
+  font-family: 'ManyDots';
+  src: url(../public/assets/fonts/ManyDots.ttf);
+}

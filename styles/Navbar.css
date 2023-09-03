@@ -14,16 +14,16 @@ and (max-width:750px)
     }
 }
 .title-container {
-    font-family: 'Roboto';
-    font-weight: 900;
-    font-style:italic;
+    font-family: 'ManyDots';
+    font-weight: 800;
+    /*font-style:italic;*/
     text-shadow: 0.35vw 0.25vw 0.25vw rgba(251, 12, 12,1), 0px -0.25vw 0.35vw rgba(12, 79, 251,.5),-0.35vw 0px 0.25vw rgba(52, 251, 12, 1);
     animation: chromaticMove 5000ms ease infinite ,pulse ease 1000ms  infinite;
     color:white;
     text-align:center;
     margin-right:auto;
-    line-height: 75%;
-    font-size:8.5vw;
+    line-height: 100%;
+    font-size:8vw;
     font-weight: bold;
     position: relative;
     max-width: 90vw;
