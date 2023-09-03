@@ -94,7 +94,7 @@ function HeaderNavbar() {
                             </ul>
                     </div>
                     <div className="title-container" >
-                        Fresco Corporation
+                        Wagie Corporation
                     </div>
                     {/*
                         

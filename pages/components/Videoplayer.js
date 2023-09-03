@@ -86,8 +86,8 @@ function VideoPlayer() {
                   WebkitFontSmoothing:'none',
                   fontFamily:"tahoma",
                 }}>
-                  It looks like you are trying to access the Fresco Corporation.
-                  Do you need some help?
+                  It looks like you are trying to access the Wagie Corporation.
+                  Would you like some help?
                 </Typography>
               </div>
               <div className="button-container">
