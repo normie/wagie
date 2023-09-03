@@ -81,9 +81,9 @@ function VideoPlayer() {
             <div className="dialogue-box">
               <div className="dialogue-title">
                 <Typography id="modal-modal-title" sx= {{
-                  width:'250px',
-                  fontSize: '1.75rem',
-                  fontWeight: '100',
+                  width:'300px',
+                  fontSize: '1.5rem',
+                  WebkitFontSmoothing:'none',
                   fontFamily:"tahoma",
                 }}>
                   It looks like you are trying to access the Fresco Corporation.
