@@ -100,17 +100,19 @@ function VideoPlayer() {
                   justifyContent: 'center',
                   alignItems: 'center',
                   width:'125px',
-                  color:'black',
                   padding: '5px',
                   border: '2px solid #666',
                   
                 }}>
                   <Typography id="modal-modal-description" sx={{ mt: 2,
                     fontSize:'2rem',
-                    color:'black',
+                    color: 'primary',
                     opacity: '0.8',
-                    marginTop: '0px', }}>
-                    Yes
+                    marginTop: '0px',
+                    WebkitFontSmoothing:'none',
+                    fontFamily:"tahoma",
+                    textTransform: 'none', }}>
+                    <u>Y</u>es
                   </Typography>
                 </Button>
                 <Button onClick={handleClick} sx={{
@@ -119,16 +121,18 @@ function VideoPlayer() {
                   justifyContent: 'center',
                   alignItems: 'center',
                   width:'125px',
-                  color:'black',
                   padding: '5px',
                   border: '2px solid #666',
                 }}>
                   <Typography id="modal-modal-description" sx={{ mt: 2,
                     fontSize:'2rem',
-                    color:'black',
+                    color:'primary',
                     opacity: '0.8',
-                    marginTop: '0px', }}>
-                    Yes
+                    marginTop: '0px',
+                    WebkitFontSmoothing:'none',
+                    fontFamily:"tahoma",
+                    textTransform: 'none', }}>
+                    <u>Y</u>es
                   </Typography>
                 </Button>
               </div>
