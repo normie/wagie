@@ -11,8 +11,7 @@ function Textmint() {
         <>  
             <Container maxWidth ='md'
             sx={{
-                display: 'flex',
-                
+                display: 'flex',                
                 alignItems: 'center',
                 flexDirection: 'column',
             }}>        
@@ -29,11 +28,23 @@ function Textmint() {
                     minWidth: '450px',
                     border: '1px solid black'
                 }}>
-                    <Typography variant='h3'>Mint Info</Typography>
+                    <Typography variant='h3'>About Wagie Corp</Typography>
                 </Paper>
+                <Container maxWidth ='md'
+            sx={{
+                display: 'flex',
+                
+                alignItems: 'center',
+                flexDirection: 'row',
+            }}> 
+            <img
+            src='https://s11.gifyu.com/images/S42jC.gif'
+            alt='GIF Image'
+            />
+            
                 <Paper maxWidth='md'
                 sx={{
-                    overflow: 'hidden',
+                    overflow: 'auto',
                     maxHeight: '40%',
                     maxWidth: '75ch',
                     width: '70%',
@@ -46,14 +57,13 @@ function Textmint() {
                     
                 }}
                 >
-                <Typography >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas risus vel justo tempor lacinia. 
-                Phasellus vitae ex in urna vestibulum tincidunt. Morbi eget dolor eu tellus porttitor mollis. Sed est velit, dignissim sit amet lobortis non, molestie sed augue. 
-                Quisque eget dui quis mauris efficitur consectetur. Morbi feugiat purus id mi lobortis, sed luctus augue dignissim. Maecenas nec est non lacus ultricies facilisis id vitae nibh. 
-                Curabitur velit quam, dapibus ut leo semper, convallis placerat nisl. 
-                Etiam neque nibh, hendrerit ut risus sed, consectetur luctus nibh. Sed nec orci egestas, maximus orci vitae, luctus lacus. Nulla dignissim purus et finibus finibus. 
-                Suspendisse lacinia varius nulla id bibendum. Sed non suscipit risus.
+                 <Typography
+                    fontFamily='tahoma'
+                    fontSize='1.1rem'
+                    >Wagie Corp is a collection of 4444 NFTs inspired by the realities of wageslavery, utilizing imageboard culture elements and art style. You can secure your free mint on Discord.
                 </Typography> 
                 </Paper>
+                </Container>
                 <Buttonmint></Buttonmint>
             </Container>
         </>

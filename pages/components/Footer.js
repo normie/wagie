@@ -22,7 +22,7 @@ function Foot(){
         }}
         >
             <Typography color="white">
-                Copyright © Fresco Corporation 
+                Copyleft © Wagie Corporation 
             </Typography>
         </Container>
     </>

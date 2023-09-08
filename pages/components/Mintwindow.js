@@ -13,13 +13,12 @@ function Windowmint(){
             maxWidth='md'
             sx={{
                 margin:'auto',
-                overflow: 'hidden',
                 display: 'flex',
                 justifyContent: 'center',
-                background: '#E9ECEF',
+                background: '#FFD700',
                 zIndex: '4',
                 maxWidth: '900px',
-                maxHeight: '600px',
+                maxHeight: '630px',
                 height: '100%',
                 width: '100%',
                 position: 'absolute',
@@ -27,7 +26,8 @@ function Windowmint(){
                 left: '0',
                 right: '0',
                 bottom: '0',
-                borderRadius: '1em',
+                border: '1px solid black',
+                boxShadow: '8px 8x rgb(31, 8, 0)',
                 
             }}
             >

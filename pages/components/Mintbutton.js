@@ -10,12 +10,13 @@ function Buttonmint() {
                 marginTop: '1rem',
                 padding:'1rem',
                 display: 'flex',
-                width: '90%',
-                height: '30%',
-                border: '1px solid black'
+                width: '80%',
+                height: 'auto',
+                border: '2px solid black',
+                backgroundColor: 'white'
                 
             }}>
-                <Typography fontSize='4rem'>Mint</Typography>
+                <Typography fontSize='3rem'>Mint on Scatter</Typography>
             </Button>
         </>
     )
