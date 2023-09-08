@@ -18,7 +18,7 @@ function Foot(){
             padding:'1rem',
             width:'100%',
             height:'100%',
-            padding: '2rem',
+            padding: '1rem',
         }}
         >
             <Typography color="white">

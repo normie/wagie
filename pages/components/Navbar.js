@@ -45,7 +45,7 @@ function HeaderNavbar() {
                                 <li>
                                     <Button 
                                     onClick={() => {
-                                        openNewTab("https://twitter.com/FrescoCorp")
+                                        openNewTab("https://twitter.com/WagieCorp")
                                     }}
                                     sx={{
                                         minWidth: '32px',
@@ -57,9 +57,12 @@ function HeaderNavbar() {
                                     </Button>
                                 </li>
                                 <li>
-                                    <Button sx={{
+                                    <Button 
+                                    onClick={() => {
+                                        openNewTab("https://t.me/wagiecorp")
+                                    }}
+                                    sx={{
                                         minWidth: '32px',
-                                        
                                     }}>
                                     <div className ="nav-icon">
                                         <Image className="img-icon" src="/assets/telegram.svg" alt="telegram" 
@@ -69,9 +72,12 @@ function HeaderNavbar() {
                                     </Button>
                                 </li>
                                 <li>
-                                    <Button sx={{
+                                <Button 
+                                    onClick={() => {
+                                        openNewTab("https://discord.gg/TwpgqbQE")
+                                    }}
+                                    sx={{
                                         minWidth: '32px',
-                                        color: 'black',
                                     }}>
                                     <div className= "nav-icon">
                                         <Image className= "img-icon" src="/assets/discord.svg" alt="discord"
@@ -79,7 +85,7 @@ function HeaderNavbar() {
                                     </div>
                                     </Button>
                                 </li>
-                                <li>
+                               {/* <li>
                                     <Button sx={{
                                         minWidth: '32px',
                                         color: 'black',
@@ -89,7 +95,7 @@ function HeaderNavbar() {
                                         width={32} height={32}/>
                                     </div>
                                     </Button>
-                                </li>
+                                </li>*/}
                             </ul>
                     </div>
                     <div className="title-container" >
