@@ -11,7 +11,7 @@ import Player from 'react-player';
 
 
 function VideoBg() {
-    const videoUrl = 'https://www.youtube.com/embed/piNI6hRyPzM?wmode=transparent&autoplay=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&list=PLFaEw-2w6HsVZs8hmWdbpEaaRCuZ1V35a'
+    const videoUrl = 'a'
     const boxStyle = {
         '@media (min-width:600px)':{
             height: '40%'

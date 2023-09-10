@@ -3,8 +3,6 @@ import { Grid, Box, Container, Paper, Slide } from "@mui/material";
 import { keyframes } from "@mui/material";
 import Image from 'next/image';
 
-//random images causing hydration error because images on server and client are not the same
-
 
 function Sectiontwoslide(props) {
 
@@ -65,7 +63,7 @@ function Sectiontwoslide(props) {
                                 paddingRight: "10px",
                                 backgroundImage: `url(${row[j % 2]})`,
                                 backgroundSize: 'contain',
-                                animation: `${i % 2 == 0 ? slideRight : slideLeft} 20s linear infinite `
+                                animation: `${i % 2 == 0 ? slideRight : slideLeft} 10s linear infinite `
                             }} />
                     )}
                 </Container>
