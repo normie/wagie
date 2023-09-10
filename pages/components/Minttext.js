@@ -45,6 +45,9 @@ function Textmint() {
                 width: '50%',                
                 alignItems: 'center',
                 flexDirection: 'column',
+                '@media (max-width:599px)':{
+                    width: '100%',
+                },
             }}>    
                 <Box
                 sx={{
