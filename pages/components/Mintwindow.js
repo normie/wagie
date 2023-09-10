@@ -10,7 +10,6 @@ function Windowmint(){
     return (
         <>
             <Box
-            maxWidth='md'
             sx={{
                 margin:'auto',
                 display: 'flex',
@@ -18,9 +17,9 @@ function Windowmint(){
                 background: '#FFD700',
                 zIndex: '4',
                 maxWidth: '900px',
-                maxHeight: '630px',
-                height: '100%',
-                width: '100%',
+                padding: '0 0 20px 0',
+                height: 'fit-content',
+                width: 'fit-content',
                 position: 'absolute',
                 top: '0',
                 left: '0',
@@ -31,7 +30,7 @@ function Windowmint(){
                 
             }}
             >
-                <Textmint></Textmint>
+               <Textmint></Textmint>
             </Box>
         </>
     )

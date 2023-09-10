@@ -13,11 +13,6 @@ export default function Home() {
   return (
     <>
       <div className="App">
-    
-        <SectionOneBg>
-        </SectionOneBg>
-          
-        <Mintbar></Mintbar>
         
         <SectionTwoBg >
           <Windowmint></Windowmint>

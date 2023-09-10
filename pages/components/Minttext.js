@@ -1,23 +1,21 @@
 import * as React from "react";
 import Button from '@mui/material/Button';
 import { Box,Container, Paper, Slide } from "@mui/material";
-import windowframe from "../../public/assets/netscape900.png";
-import windowframe1 from "../../public/assets/netscape730.png";
 import Typography from "@mui/material/Typography";
 import Buttonmint from "./Mintbutton.js"
 
 function Textmint() {
     return (
         <>  
-            <Container maxWidth ='md'
+            <Container
             sx={{
                 display: 'flex',                
                 alignItems: 'center',
                 flexDirection: 'column',
             }}>        
-                <Paper maxWidth='sm'
+                <Paper
                 sx={{
-                    display: 'flex',
+                    
                     justifyContent: 'center',
                     alignItems: 'center',
                     
@@ -25,44 +23,58 @@ function Textmint() {
                     width: '50%',
                     maxWidth: '75%',
                     maxHeight: '20%',
-                    minWidth: '450px',
+                    minWidth: '400px',
                     border: '1px solid black'
                 }}>
                     <Typography variant='h3'>About Wagie Corp</Typography>
                 </Paper>
-                <Container maxWidth ='md'
+                <Container
             sx={{
                 display: 'flex',
-                
+                justifyContent: 'space-evenly',
                 alignItems: 'center',
                 flexDirection: 'row',
+                flexWrap: 'wrap',
             }}> 
             <img
             src='https://s11.gifyu.com/images/S42jC.gif'
             alt='GIF Image'
             />
-            
-                <Paper maxWidth='md'
+            <Container
+            sx={{
+                display: 'flex',
+                width: '50%',                
+                alignItems: 'center',
+                flexDirection: 'column',
+            }}>    
+                <Box
                 sx={{
-                    overflow: 'auto',
-                    maxHeight: '40%',
-                    maxWidth: '75ch',
-                    width: '70%',
-                    height: '50%',
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    textAlign: 'left',
-                    padding: '1rem',
-                    margin: '1rem',
+                    border: '1px solid black',
+                    marginTop: '1rem',
                     
-                }}
-                >
-                 <Typography
+                }}>
+                <Typography
                     fontFamily='tahoma'
                     fontSize='1.1rem'
                     >Wagie Corp is a collection of 4444 NFTs inspired by the realities of wageslavery, utilizing imageboard culture elements and art style. You can secure your free mint on Discord.
                 </Typography> 
-                </Paper>
+                </Box>
+                <Box
+                sx={{
+                    border: '1px solid black',
+                    marginTop: '1rem',
+                    padding: '0 5px 0 5px',
+                    
+            
+                }}>
+                <Typography
+                    fontFamily='tahoma'
+                    fontSize='1rem'
+                    ><b>Official Links</b>: Twitter, Discord, Telegram, Scatter, OpenSea, Blur, Contract. 
+                </Typography> 
+                </Box>
+                </Container>
+
                 </Container>
                 <Buttonmint></Buttonmint>
             </Container>

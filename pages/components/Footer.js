@@ -12,10 +12,8 @@ import { Typography } from '@mui/material';
 function Foot(){
     return (
     <>
-        <Container maxWidth="false"
+        <Container
         sx={{
-            
-            padding:'1rem',
             width:'100%',
             height:'100%',
             padding: '1rem',
