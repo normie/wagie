@@ -17,8 +17,7 @@ function Textmint() {
                 sx={{
                     
                     justifyContent: 'center',
-                    alignItems: 'center',
-                    
+                    alignItems: 'center',                    
                     margin:'1rem',
                     width: '50%',
                     maxWidth: '75%',
@@ -70,7 +69,7 @@ function Textmint() {
                 <Typography
                     fontFamily='tahoma'
                     fontSize='1rem'
-                    ><b>Official Links</b>: Twitter, Discord, Telegram, Scatter, OpenSea, Blur, Contract. 
+                    ><b>Official Links</b>: <a href='https://twitter.com/WagieCorp'>Twitter</a>, <a href='https://discord.gg/TwpgqbQE'>Discord</a>, <a href='https://t.me/wagiecorp'>Telegram</a>, <a href='https://www.scatter.art'>Scatter</a>, <a href='https://opensea.io'>OpenSea</a>, <a href='https://blur.io'>Blur</a>, Contract. 
                 </Typography> 
                 </Box>
                 </Container>
