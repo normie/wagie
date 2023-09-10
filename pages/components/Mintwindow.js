@@ -1,8 +1,6 @@
 import * as React from "react";
 import Button from '@mui/material/Button';
 import { Box,Container, Paper, Slide } from "@mui/material";
-import windowframe from "../../public/assets/netscape900.png";
-import windowframe1 from "../../public/assets/netscape730.png";
 import Typography from "@mui/material";
 import Textmint from "./Minttext";
 
