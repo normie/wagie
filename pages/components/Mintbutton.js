@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 function Buttonmint() {
     return (
         <>
-            <Button href='https://www.scatter.art/'
+            <Button href='https://www.scatter.art/wagie-corp?tab=mint'
             sx ={{
                 marginTop: '1rem',
                 padding:'1rem',
