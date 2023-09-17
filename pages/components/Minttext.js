@@ -72,7 +72,7 @@ function Textmint() {
                 <Typography
                     fontFamily='tahoma'
                     fontSize='1rem'
-                    ><b>Official Links</b>: <a href='https://twitter.com/WagieCorp'>Twitter</a>, <a href='https://discord.gg/TwpgqbQE'>Discord</a>, <a href='https://t.me/wagiecorp'>Telegram</a>, <a href='https://www.scatter.art/wagie-corp?tab=mint'>Scatter</a>, <a href='https://opensea.io'>OpenSea</a>, <a href='https://blur.io'>Blur</a>, <a href='https://etherscan.io/address/0x6CA0Bd86F353CF06EDA39aAB4a192c1b888fDBbD'>Contract</a>. 
+                    ><b>Official Links</b>: <a href='https://discord.gg/6P9ZgJsHfS'>Discord</a>, <a href='https://twitter.com/WagieCorp'>Twitter</a>, <a href='https://t.me/wagiecorp'>Telegram</a>, <a href='https://www.scatter.art/wagie-corp?tab=mint'>Scatter</a>, <a href='https://opensea.io'>OpenSea</a>, <a href='https://blur.io'>Blur</a>, <a href='https://etherscan.io/address/0x6CA0Bd86F353CF06EDA39aAB4a192c1b888fDBbD'>Contract</a>. 
                 </Typography> 
                 </Box>
                 </Container>
