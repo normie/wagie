@@ -58,7 +58,7 @@ function Textmint() {
                 <Typography
                     fontFamily='tahoma'
                     fontSize='1.1rem'
-                    >Wagie Corp is a collection of 4444 NFTs inspired by the realities of wageslavery, utilizing imageboard culture elements and art style. Get your free mint on Discord!
+                    >Wagie Corp is a collection of 4444 NFTs inspired by the realities of wageslavery, utilizing imageboard culture elements and art style. Just another day in paradise.
                 </Typography> 
                 </Box>
                 <Box
